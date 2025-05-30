@@ -17,9 +17,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "DzSolarized",
+        "label": "DzSolarized Light",
         "uiTheme": "vs",
-        "path": "./themes/DzSolarized-color-theme.json"
+        "path": "./themes/DzSolarized-Light-color-theme.json"
+      },
+      {
+        "label": "DzSolarized Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/DzSolarized-Dark-color-theme.json"
       }
     ]
   },

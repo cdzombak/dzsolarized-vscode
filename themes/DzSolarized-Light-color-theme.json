@@ -105,10 +105,11 @@
     "terminal.ansiBrightBlue": "#839496",
     "terminal.ansiBrightMagenta": "#6c71c4",
     "terminal.ansiBrightCyan": "#93a1a1",
-    "terminal.ansiBrightWhite": "#fdf6e3"
+    "terminal.ansiBrightWhite": "#fdf6e3",
+    "terminal.selectionBackground": "#586e75"
   },
 
-  "terminal.integrated.fontFamily": "Meslo LG M DZ",
+  "terminal.integrated.fontFamily": "Meslo",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeight": "normal",
   "terminal.integrated.letterSpacing": 0,
