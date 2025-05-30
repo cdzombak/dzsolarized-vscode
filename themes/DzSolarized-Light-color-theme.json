@@ -46,7 +46,7 @@
     "editor.findMatchHighlightBorder": "#b58900",
     "editor.foreground": "#586e75",
 
-    "editor.inactiveSelectionBackground": "#f5eecb80",
+    "editor.inactiveSelectionBackground": "#e0dac0cc",
     "editor.selectionBackground": "#eee8d5dd",
     "editorCursor.foreground": "#657b83",
     "editorError.foreground": "#dc322f",
@@ -115,7 +115,8 @@
     "statusBarItem.prominentBackground": "#268bd2",
     "statusBarItem.prominentForeground": "#ffffff",
     "statusBarItem.prominentHoverBackground": "#1a6aa8",
-    "statusBarItem.prominentHoverForeground": "#ffffff"
+    "statusBarItem.prominentHoverForeground": "#ffffff",
+    "editor.hoverHighlightBackground": "#eaffea"
   },
 
   "terminal.integrated.fontFamily": "Meslo",

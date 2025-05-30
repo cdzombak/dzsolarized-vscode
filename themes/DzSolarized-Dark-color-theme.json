@@ -114,7 +114,12 @@
     "statusBarItem.prominentBackground": "#20577a",
     "statusBarItem.prominentForeground": "#fdf6e3",
     "statusBarItem.prominentHoverBackground": "#2a6b8c",
-    "statusBarItem.prominentHoverForeground": "#fdf6e3"
+    "statusBarItem.prominentHoverForeground": "#fdf6e3",
+    "editor.hoverHighlightBackground": "#22442240",
+    "quickInput.background": "#232526",
+    "quickInput.foreground": "#cccccc",
+    "quickInputList.focusBackground": "#163d56",
+    "quickInputList.focusForeground": "#fdf6e3"
   },
 
   "terminal.integrated.fontFamily": "Meslo",
