@@ -1,0 +1,30 @@
+---
+version: '3'
+
+tasks:
+  deps:
+    desc: Install dependencies
+    cmds:
+      - npm install
+
+  build:
+    desc: Build the VS Code extension
+    cmds:
+      - mkdir -p out
+      - npm run package
+
+  clean:
+    desc: Clean build artifacts
+    cmds:
+      - rm -rf out
+      - rm -f *.vsix
+
+  test-output:
+    desc: Run test script to generate console output
+    cmds:
+      - node test-output.js
+
+  default:
+    desc: Show available tasks
+    cmds:
+      - task --list

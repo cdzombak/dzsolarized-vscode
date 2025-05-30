@@ -1,0 +1,32 @@
+{
+  "name": "dzsolarized",
+  "displayName": "DzSolarized",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "cdzombak",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdzombak/dzsolarized-vscode"
+  },
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "DzSolarized",
+        "uiTheme": "vs",
+        "path": "./themes/DzSolarized-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package --no-dependencies --out out/dzsolarized.vsix"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.24.0"
+  }
+}
