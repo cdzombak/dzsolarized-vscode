@@ -19,5 +19,5 @@ help: # List available targets
 		if (target == "default") next; \
 		comment = $$0; \
 		sub(/^[^#]*#?/, "", comment); \
-		printf "%s\t%s\n", target, comment; \
+		printf "\033[1m%s\033[0m\t%s\n", target, comment; \
 	}' Makefile | sort
