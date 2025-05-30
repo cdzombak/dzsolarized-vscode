@@ -116,7 +116,10 @@
     "statusBarItem.prominentForeground": "#ffffff",
     "statusBarItem.prominentHoverBackground": "#1a6aa8",
     "statusBarItem.prominentHoverForeground": "#ffffff",
-    "editor.hoverHighlightBackground": "#eaffea"
+    "editor.hoverHighlightBackground": "#eaffea",
+    "scrollbarSlider.background": "#333c3c33",
+    "scrollbarSlider.hoverBackground": "#586e7555",
+    "scrollbarSlider.activeBackground": "#586e7577"
   },
 
   "terminal.integrated.fontFamily": "Meslo",
