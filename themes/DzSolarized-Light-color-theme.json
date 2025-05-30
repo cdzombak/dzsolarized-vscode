@@ -106,7 +106,16 @@
     "terminal.ansiBrightMagenta": "#6c71c4",
     "terminal.ansiBrightCyan": "#93a1a1",
     "terminal.ansiBrightWhite": "#fdf6e3",
-    "terminal.selectionBackground": "#586e75"
+    "terminal.selectionBackground": "#586e75",
+
+    "statusBarItem.remoteBackground": "#268bd2",
+    "statusBarItem.remoteForeground": "#ffffff",
+    "statusBarItem.remoteHoverBackground": "#1a6aa8",
+    "statusBarItem.remoteHoverForeground": "#ffffff",
+    "statusBarItem.prominentBackground": "#268bd2",
+    "statusBarItem.prominentForeground": "#ffffff",
+    "statusBarItem.prominentHoverBackground": "#1a6aa8",
+    "statusBarItem.prominentHoverForeground": "#ffffff"
   },
 
   "terminal.integrated.fontFamily": "Meslo",
