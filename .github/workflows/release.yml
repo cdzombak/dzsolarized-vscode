@@ -20,10 +20,13 @@ jobs:
           node-version: "24"
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --include=dev
 
       - name: Check formatting with Prettier
         run: npx prettier --check .
+
+      - name: Ensure out directory exists
+        run: mkdir -p out
 
       - name: Get next version tag (conventional commits)
         id: version
@@ -40,7 +43,7 @@ jobs:
           VERSION: ${{ steps.version.outputs.version }}
 
       - name: Build theme package
-        run: npm run package
+        run: vsce package --no-dependencies --out out/dzsolarized.vsix
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
@@ -54,7 +57,7 @@ jobs:
       - name: Upload VSIX as release asset
         uses: softprops/action-gh-release@v2
         with:
-          files: out/*.vsix
+          files: out/dzsolarized.vsix
           tag_name: ${{ steps.version.outputs.v-version }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -83,10 +86,13 @@ jobs:
           node-version: "24"
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --include=dev
 
       - name: Check formatting with Prettier
         run: npx prettier --check .
+
+      - name: Ensure out directory exists
+        run: mkdir -p out
 
       - name: Build theme package
         run: npm run package
