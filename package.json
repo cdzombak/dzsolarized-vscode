@@ -29,9 +29,11 @@
     ]
   },
   "scripts": {
-    "package": "vsce package --no-dependencies --out out/dzsolarized.vsix"
+    "package": "vsce package --no-dependencies --out out/dzsolarized.vsix",
+    "format": "prettier --write ."
   },
   "devDependencies": {
-    "@vscode/vsce": "^2.24.0"
+    "@vscode/vsce": "^2.24.0",
+    "prettier": "^3.0.0"
   }
 }

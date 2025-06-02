@@ -1,4 +1,4 @@
-.PHONY: deps build clean test-output default help
+.PHONY: deps build clean test-output default help format
 
 default: help
 
@@ -21,3 +21,6 @@ help: # List available targets
 		sub(/^[^#]*#?/, "", comment); \
 		printf "\033[1m%s\033[0m\t%s\n", target, comment; \
 	}' Makefile | sort
+
+format: # Format code using Prettier
+	npx prettier --write .
