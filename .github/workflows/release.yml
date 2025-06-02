@@ -43,7 +43,7 @@ jobs:
           VERSION: ${{ steps.version.outputs.version }}
 
       - name: Build theme package
-        run: vsce package --no-dependencies --out out/dzsolarized.vsix
+        run: npm run package
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
