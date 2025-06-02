@@ -23,4 +23,4 @@ help: # List available targets
 	}' Makefile | sort
 
 format: # Format code using Prettier
-	npx prettier --write .
+	npx prettier --write . "!**/.vscode/**"

@@ -30,7 +30,7 @@
   },
   "scripts": {
     "package": "vsce package --no-dependencies --out out/dzsolarized.vsix",
-    "format": "prettier --write ."
+    "format": "prettier --write . '!**/.vscode/**'"
   },
   "devDependencies": {
     "@vscode/vsce": "^2.24.0",
