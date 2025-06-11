@@ -1,4 +1,4 @@
-.PHONY: deps build clean test-output default help format
+.PHONY: deps build clean test-output default help format work-vsc work-cursor
 
 default: help
 
@@ -24,3 +24,9 @@ help: # List available targets
 
 format: # Format code using Prettier
 	npx prettier --write . "!**/.vscode/**"
+
+work-vsc:
+	code --extensionDevelopmentPath=$$(pwd) .
+
+work-cursor:
+	cursor --extensionDevelopmentPath=$$(pwd) .
