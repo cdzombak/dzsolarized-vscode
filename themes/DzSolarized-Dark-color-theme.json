@@ -57,6 +57,8 @@
     "editorWidget.background": "#232526",
     "editorWidget.border": "#2c2c32",
     "editor.lineHighlightBorder": "#586e7540",
+    "editor.wordHighlightBackground": "#83949620",
+    "editor.wordHighlightBorder": "#424577",
     "badge.background": "#2c2c32",
 
     "breadcrumb.activeSelectionForeground": "#ffffff",

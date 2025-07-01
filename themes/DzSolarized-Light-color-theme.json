@@ -46,8 +46,8 @@
     "editor.findMatchHighlightBorder": "#b58900",
     "editor.foreground": "#586e75",
 
-    "editor.inactiveSelectionBackground": "#e0dac0cc",
-    "editor.selectionBackground": "#eee8d5dd",
+    "editor.inactiveSelectionBackground": "#e0dac0aa",
+    "editor.selectionBackground": "#e0dac0dd",
     "editorCursor.foreground": "#657b83",
     "editorError.foreground": "#dc322f",
     "editorGroupHeader.tabsBackground": "#fefefe",
@@ -57,6 +57,8 @@
     "editorWidget.background": "#fefefe",
     "editorWidget.border": "#e0e0e0",
     "editor.lineHighlightBorder": "#bdc3c740",
+    "editor.wordHighlightBackground": "#57575710",
+    "editor.wordHighlightBorder": "#829ca4",
     "badge.background": "#e6f3ff",
 
     "breadcrumb.activeSelectionForeground": "#333333",
