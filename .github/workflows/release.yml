@@ -50,15 +50,8 @@ jobs:
         with:
           tag_name: ${{ steps.version.outputs.v-version }}
           name: Release ${{ steps.version.outputs.v-version }}
-          generate_release_notes: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload VSIX as release asset
-        uses: softprops/action-gh-release@v2
-        with:
           files: out/dzsolarized.vsix
-          tag_name: ${{ steps.version.outputs.v-version }}
+          generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
