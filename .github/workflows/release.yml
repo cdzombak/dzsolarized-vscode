@@ -50,7 +50,7 @@ jobs:
         with:
           tag_name: ${{ steps.version.outputs.v-version }}
           name: Release ${{ steps.version.outputs.v-version }}
-          files: out/dzsolarized.vsix
+          files: out/dzsolarized-${{ steps.version.outputs.version }}.vsix
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
