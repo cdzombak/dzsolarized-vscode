@@ -1,0 +1,32 @@
+name: Release VS Code Theme
+
+on:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Check formatting with Prettier
+        run: npx prettier --check . "!**/.vscode/**"
+
+      - name: Ensure out directory exists
+        run: mkdir -p out
+
+      - name: Build theme package
+        run: npm run package

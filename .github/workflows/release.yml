@@ -4,12 +4,13 @@ on:
   push:
     branches:
       - main
-  pull_request:
 
 jobs:
   build-and-release:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -55,6 +56,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Publish to Visual Studio Marketplace
+        uses: HaaLeo/publish-vscode-extension@v2
+        with:
+          pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+          registryUrl: https://marketplace.visualstudio.com
+          extensionFile: out/dzsolarized-${{ steps.version.outputs.version }}.vsix
+
       - name: Commit and push version bump
         run: |
           git config user.name "github-actions[bot]"
@@ -66,26 +74,31 @@ jobs:
           VERSION: ${{ steps.version.outputs.version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  build:
-    if: github.event_name == 'pull_request'
+  ntfy:
+    name: Ntfy
+    if: github.event_name == 'push' && ${{ !cancelled() }}
     runs-on: ubuntu-latest
+    needs: [build-and-release]
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Send success notification
+        uses: niniyas/ntfy-action@v1.0.4
+        if: ${{ !contains(needs.*.result, 'failure') }}
         with:
-          node-version: "24"
-
-      - name: Install dependencies
-        run: npm install --include=dev
-
-      - name: Check formatting with Prettier
-        run: npx prettier --check .
-
-      - name: Ensure out directory exists
-        run: mkdir -p out
-
-      - name: Build theme package
-        run: npm run package
+          url: "https://ntfy.cdzombak.net"
+          topic: "gha-builds"
+          priority: 3
+          headers: '{"authorization": "Bearer ${{ secrets.NTFY_TOKEN }}"}'
+          tags: white_check_mark
+          title: ${{ github.event.repository.name }} ${{ needs.build-and-release.outputs.version }} available
+          details: ${{ github.event.repository.name }} version ${{ needs.build-and-release.outputs.version }} is now available.
+      - name: Send failure notification
+        uses: niniyas/ntfy-action@v1.0.4
+        if: ${{ contains(needs.*.result, 'failure') }}
+        with:
+          url: "https://ntfy.cdzombak.net"
+          topic: "gha-builds"
+          priority: 3
+          headers: '{"authorization": "Bearer ${{ secrets.NTFY_TOKEN }}"}'
+          tags: no_entry
+          title: ${{ github.event.repository.name }} ${{ needs.build-and-release.outputs.version }} build failed
+          details: Build failed for ${{ github.event.repository.name }} version ${{ needs.build-and-release.outputs.version }}.
