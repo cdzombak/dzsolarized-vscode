@@ -83,6 +83,8 @@
 
     "statusBar.background": "#00161a",
     "statusBar.foreground": "#fdf6e3",
+    "statusBar.noFolderBackground": "#00161a",
+    "statusBar.noFolderForeground": "#fdf6e3",
 
     "problemsErrorIcon.foreground": "#dc322f",
     "problemsInfoIcon.foreground": "#268bd2",
