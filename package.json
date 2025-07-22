@@ -1,9 +1,9 @@
 {
   "name": "dzsolarized",
   "displayName": "DzSolarized",
-  "description": "",
+  "description": "Solarized-derived theme reflecting @cdzombak's personal preferences",
   "version": "0.0.8",
-  "publisher": "cdzombak",
+  "publisher": "ChrisDzombak",
   "repository": {
     "type": "git",
     "url": "https://github.com/cdzombak/dzsolarized-vscode"
