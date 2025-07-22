@@ -46,8 +46,8 @@
     "editor.findMatchHighlightBorder": "#b58900",
     "editor.foreground": "#839496",
 
-    "editor.inactiveSelectionBackground": "#07364280",
-    "editor.selectionBackground": "#586e7580",
+    "editor.inactiveSelectionBackground": "#ffffff25",
+    "editor.selectionBackground": "#ffffff20",
     "editorCursor.foreground": "#93a1a1",
     "editorError.foreground": "#dc322f",
     "editorGroupHeader.tabsBackground": "#232526",
