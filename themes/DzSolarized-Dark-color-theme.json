@@ -24,7 +24,7 @@
     "sideBarTitle.foreground": "#cccccc",
 
     "list.activeSelectionBackground": "#232526",
-    "list.hoverBackground": "#232526",
+    "list.hoverBackground": "#ffffff20",
     "list.activeSelectionForeground": "#ffffff",
 
     "titleBar.activeBackground": "#232526",
