@@ -12,7 +12,7 @@
 
 ### Marketplace
 
-Install from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ChrisDzombak.dzsolarized).
+Install from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ChrisDzombak.dzsolarized) or [Open VSX Registry](https://open-vsx.org/extension/ChrisDzombak/dzsolarized).
 
 ### Manual Installation
 

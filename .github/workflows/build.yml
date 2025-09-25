@@ -30,3 +30,12 @@ jobs:
 
       - name: Build theme package
         run: npm run package
+
+  actionlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run actionlint
+        uses: raven-actions/actionlint@v2
