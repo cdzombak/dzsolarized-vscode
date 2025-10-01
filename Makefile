@@ -25,5 +25,8 @@ help: # List available targets
 format: # Format code using Prettier
 	npx prettier --write . "!**/.vscode/**"
 
-work:
+work: # Open for development in VS Code
 	code --extensionDevelopmentPath=$$(pwd) .
+
+work-cursor: # Open for development in Cursor
+	cursor --extensionDevelopmentPath=$$(pwd) .
