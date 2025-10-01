@@ -134,40 +134,162 @@
 
   "tokenColors": [
     {
-      "scope": "comment",
-      "settings": { "foreground": "#586e75", "fontStyle": "italic" }
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "foreground": "#586E75",
+        "fontStyle": "italic"
+      }
     },
     {
-      "scope": "string",
-      "settings": { "foreground": "#2aa198" }
+      "scope": ["keyword", "storage.type", "storage.modifier"],
+      "settings": {
+        "foreground": "#859900"
+      }
     },
     {
-      "scope": "constant.numeric",
-      "settings": { "foreground": "#d33682" }
+      "scope": ["keyword.control", "keyword.operator"],
+      "settings": {
+        "foreground": "#859900"
+      }
     },
     {
-      "scope": "variable.language",
-      "settings": { "foreground": "#268bd2" }
+      "scope": ["string", "string.quoted"],
+      "settings": {
+        "foreground": "#2AA198"
+      }
     },
     {
-      "scope": "keyword",
-      "settings": { "foreground": "#859900" }
+      "scope": ["constant.numeric", "constant.language"],
+      "settings": {
+        "foreground": "#CB4B16"
+      }
     },
     {
-      "scope": "storage",
-      "settings": { "foreground": "#b58900" }
+      "scope": ["constant.character.escape"],
+      "settings": {
+        "foreground": "#2AA198",
+        "fontStyle": "bold"
+      }
     },
     {
-      "scope": "entity.name.function",
-      "settings": { "foreground": "#268bd2" }
+      "scope": ["entity.name.function", "support.function"],
+      "settings": {
+        "foreground": "#268BD2"
+      }
     },
     {
-      "scope": "variable.parameter",
-      "settings": { "foreground": "#6c71c4" }
+      "scope": [
+        "entity.name.type",
+        "entity.name.class",
+        "support.type",
+        "support.class"
+      ],
+      "settings": {
+        "foreground": "#B58900"
+      }
     },
     {
-      "scope": "meta.function-call",
-      "settings": { "foreground": "#2aa198" }
+      "scope": ["entity.name.type.class.abstract"],
+      "settings": {
+        "foreground": "#B58800",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["variable", "support.variable"],
+      "settings": {
+        "foreground": "#268BD2"
+      }
+    },
+    {
+      "scope": ["variable.parameter"],
+      "settings": {
+        "foreground": "#CB4B16"
+      }
+    },
+    {
+      "scope": ["entity.name.tag"],
+      "settings": {
+        "foreground": "#268BD2",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["entity.other.attribute-name"],
+      "settings": {
+        "foreground": "#657B83"
+      }
+    },
+    {
+      "scope": ["meta.annotation", "storage.type.annotation"],
+      "settings": {
+        "foreground": "#859900"
+      }
+    },
+    {
+      "scope": ["entity.name.function.decorator", "meta.decorator"],
+      "settings": {
+        "foreground": "#6C6FC4"
+      }
+    },
+    {
+      "scope": ["constant.language.boolean"],
+      "settings": {
+        "foreground": "#268BD2"
+      }
+    },
+    {
+      "scope": ["invalid", "invalid.illegal"],
+      "settings": {
+        "foreground": "#DC322F"
+      }
+    },
+    {
+      "scope": ["invalid.deprecated"],
+      "settings": {
+        "foreground": "#DC322F",
+        "fontStyle": "strikethrough"
+      }
+    },
+    {
+      "scope": ["markup.heading"],
+      "settings": {
+        "foreground": "#CB4B16",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["markup.bold"],
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["markup.italic"],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["markup.underline.link"],
+      "settings": {
+        "foreground": "#268BD2"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.string.begin",
+        "punctuation.definition.string.end"
+      ],
+      "settings": {
+        "foreground": "#2AA198"
+      }
+    },
+    {
+      "scope": ["punctuation"],
+      "settings": {
+        "foreground": "#839496"
+      }
     }
   ]
 }
