@@ -198,7 +198,7 @@
     {
       "scope": ["variable", "support.variable"],
       "settings": {
-        "foreground": "#268BD2"
+        "foreground": "#839496"
       }
     },
     {
