@@ -136,22 +136,37 @@
     {
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
-        "foreground": "#93A1A1",
+        "foreground": "#859901",
         "fontStyle": "italic"
       }
     },
+    { "scope": "keyword", "settings": { "foreground": "#B58900" } },
     {
-      "scope": ["keyword", "storage.type", "storage.modifier"],
+      "scope": ["storage.type", "storage.modifier"],
+      "settings": {
+        "foreground": "#B58900"
+      }
+    },
+    {
+      "scope": ["entity.name.namespace"],
+      "settings": { "foreground": "#845eda" }
+    },
+    {
+      "scope": ["meta.function.call"],
+      "settings": { "foreground": "#6c71c4" }
+    },
+    { "scope": ["constant.other"], "settings": { "foreground": "#8d1d98" } },
+    {
+      "scope": ["entity.name.function.macro"],
+      "settings": { "foreground": "#c27203" }
+    },
+    {
+      "scope": ["keyword.control"],
       "settings": {
         "foreground": "#859900"
       }
     },
-    {
-      "scope": ["keyword.control", "keyword.operator"],
-      "settings": {
-        "foreground": "#859900"
-      }
-    },
+    { "scope": ["keyword.operator"], "settings": { "foreground": "#586e75" } },
     {
       "scope": ["string", "string.quoted"],
       "settings": {
@@ -174,24 +189,30 @@
     {
       "scope": ["entity.name.function", "support.function"],
       "settings": {
-        "foreground": "#268BD2"
+        "foreground": "#00617a"
       }
     },
     {
-      "scope": [
-        "entity.name.type",
-        "entity.name.class",
-        "support.type",
-        "support.class"
-      ],
+      "scope": ["entity.name.class", "support.type", "support.class"],
       "settings": {
         "foreground": "#B58900"
       }
     },
     {
+      "scope": ["entity.name.type"],
+      "settings": {
+        "foreground": "#a04908"
+      }
+    },
+    {
       "scope": ["entity.name.type.class.abstract"],
       "settings": {
-        "foreground": "#B58800",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["entity.name.type.result"],
+      "settings": {
         "fontStyle": "italic"
       }
     },
@@ -288,7 +309,7 @@
     {
       "scope": ["punctuation"],
       "settings": {
-        "foreground": "#657B83"
+        "foreground": "#3f9100"
       }
     }
   ]

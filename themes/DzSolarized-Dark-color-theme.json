@@ -136,22 +136,37 @@
     {
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
-        "foreground": "#586E75",
+        "foreground": "#859900",
         "fontStyle": "italic"
       }
     },
+    { "scope": "keyword", "settings": { "foreground": "#B58900" } },
     {
-      "scope": ["keyword", "storage.type", "storage.modifier"],
+      "scope": ["storage.type", "storage.modifier"],
+      "settings": {
+        "foreground": "#B58900"
+      }
+    },
+    {
+      "scope": ["entity.name.namespace"],
+      "settings": { "foreground": "#6C6FC4" }
+    },
+    {
+      "scope": ["meta.function.call"],
+      "settings": { "foreground": "#6C6FC4" }
+    },
+    { "scope": ["constant.other"], "settings": { "foreground": "#6C6FC4" } },
+    {
+      "scope": ["entity.name.function.macro"],
+      "settings": { "foreground": "#CB4B16" }
+    },
+    {
+      "scope": ["keyword.control"],
       "settings": {
         "foreground": "#859900"
       }
     },
-    {
-      "scope": ["keyword.control", "keyword.operator"],
-      "settings": {
-        "foreground": "#859900"
-      }
-    },
+    { "scope": ["keyword.operator"], "settings": { "foreground": "#839496" } },
     {
       "scope": ["string", "string.quoted"],
       "settings": {
@@ -174,7 +189,7 @@
     {
       "scope": ["entity.name.function", "support.function"],
       "settings": {
-        "foreground": "#268BD2"
+        "foreground": "#2AA198"
       }
     },
     {
@@ -189,9 +204,20 @@
       }
     },
     {
+      "scope": ["entity.name.type"],
+      "settings": {
+        "foreground": "#CB4B16"
+      }
+    },
+    {
       "scope": ["entity.name.type.class.abstract"],
       "settings": {
-        "foreground": "#B58800",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["entity.name.type.result"],
+      "settings": {
         "fontStyle": "italic"
       }
     },
@@ -288,7 +314,7 @@
     {
       "scope": ["punctuation"],
       "settings": {
-        "foreground": "#839496"
+        "foreground": "#859900"
       }
     }
   ]
