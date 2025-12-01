@@ -34,6 +34,6 @@
   },
   "devDependencies": {
     "@vscode/vsce": "^2.24.0",
-    "prettier": "^3.0.0"
+    "prettier": "^3.7.3"
   }
 }
