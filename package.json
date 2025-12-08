@@ -25,6 +25,15 @@
         "label": "DzSolarized Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/DzSolarized-Dark-color-theme.json"
+      },{
+        "label": "DzSolarized Light (High Contrast Terminal)",
+        "uiTheme": "vs",
+        "path": "./themes/DzSolarized-Light-HighContrastTerminal-color-theme.json"
+      },
+      {
+        "label": "DzSolarized Dark (High Contrast Terminal)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/DzSolarized-Dark-HighContrastTerminal-color-theme.json"
       }
     ]
   },
